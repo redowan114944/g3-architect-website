@@ -10,13 +10,14 @@
 
 header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 45px 240px;
+    padding: 45px 250px;
     text-align: center;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav>h1 {
@@ -78,4 +79,25 @@ nav li a {
     padding: 20px 25px;
     margin-bottom: 50px;
     cursor: pointer;
+}
+
+/* responsive header for mobile */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* responsive header for tablet */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
