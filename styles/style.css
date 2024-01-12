@@ -101,3 +101,9 @@ nav li a {
         flex-direction: column;
     }
 }
+
+/* second-part-section */
+
+.second-part{
+    display: flex;
+}
